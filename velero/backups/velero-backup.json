@@ -1,0 +1,44 @@
+{
+  "kind": "Backup",
+  "apiVersion": "velero.io/v1",
+  "metadata": {
+    "name": "planes",
+    "namespace": "velero",
+    "selfLink": "/apis/velero.io/v1/namespaces/velero/backups/planes",
+    "uid": "c1b08eb9-d017-11e9-b335-00505688b89b",
+    "resourceVersion": "165908",
+    "generation": 1,
+    "creationTimestamp": "2019-09-05T20:00:06Z",
+    "labels": {
+      "velero.io/storage-location": "default"
+    }
+  },
+  "spec": {
+    "includedNamespaces": [
+      "planespotter"
+    ],
+    "excludedNamespaces": null,
+    "includedResources": null,
+    "excludedResources": null,
+    "labelSelector": null,
+    "ttl": "720h0m0s",
+    "includeClusterResources": null,
+    "hooks": {
+      "resources": null
+    },
+    "storageLocation": "default",
+    "volumeSnapshotLocations": null
+  },
+  "status": {
+    "version": 1,
+    "expiration": "2019-10-05T20:00:06Z",
+    "phase": "Completed",
+    "validationErrors": null,
+    "startTimestamp": "2019-09-05T20:00:06Z",
+    "completionTimestamp": "2019-09-05T20:00:07Z",
+    "volumeSnapshotsAttempted": 0,
+    "volumeSnapshotsCompleted": 0,
+    "warnings": 0,
+    "errors": 0
+  }
+}
